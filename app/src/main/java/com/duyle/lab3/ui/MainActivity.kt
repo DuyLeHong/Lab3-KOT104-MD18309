@@ -1,4 +1,4 @@
-package com.duyle.lab3
+package com.duyle.lab3.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true)
 @Composable
-fun GetLayout (title: String = "Trang chu", innerPadding : PaddingValues = PaddingValues(0.dp)) {
+private fun GetLayout (title: String = "Trang chu", innerPadding : PaddingValues = PaddingValues(0.dp)) {
 
     var count by rememberSaveable { mutableIntStateOf(0) }
 
@@ -62,7 +62,7 @@ fun GetLayout (title: String = "Trang chu", innerPadding : PaddingValues = Paddi
 }
 
 @Composable
-fun GetTextTitle (title: String = "Trang chu", innerPadding : PaddingValues = PaddingValues(0.dp)) {
+private fun GetTextTitle (title: String = "Trang chu", innerPadding : PaddingValues = PaddingValues(0.dp)) {
     Text(
         text = title,
         modifier = Modifier
